@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <section id="login">
+    <header>
+
+        <h1 class="text-4xl text-center">Welcome to my <span class="text-violet-600 font-semibold">BANK</span> </h1>
+    </header>
+    <main>
+        <section class="bg-slate-300 w-3/4 mx-auto mt-8 p-5 space-y-5 rounded text-center">
+            <h3 class="text-center text-3xl font-semibold">Please Login</h3>
+            <input class="w-full outline-none px-4 py-2 rounded bg-transparent text-center border-b-2" type="text" id="user-email" placeholder="Email: sakib@gmail.com"> <br>
+            <input class="w-full outline-none px-4 py-2 rounded bg-transparent text-center border-b-2"  type="password" id="user-password" placeholder="Password: secret">
+            <button class="bg-lime-500 hover:bg-lime-700 px-4 py-2 rounded mx-auto font-semibold" id="btn-submit">Submit</button>
+        </section>
+   </section>
+
+        <!-- bank account  -->
+        <section id="bankAccount" style="display:block">
+            <section>
+
+                <h1 class="text-4xl text-center mt-12">Welcome to my <span class="text-violet-600 font-semibold">BANK</span>
+                </h1>
+            </section>
+            <section class="w-full md:w-3/4 mx-auto my-8 ">
+                <section class="grid grid-cols-3 gap-3 text-white">
+                    <div class="bg-green-400 rounded p-6 text-center">
+                        <h3 class=" font-semibold text-base md:text-2xl">Deposit</h3>
+                        <p class="text-3xl">$ <span id="deposit">00</span></p>
+                    </div>
+                    <div class="bg-yellow-400 rounded p-6">
+                        <h3 class=" font-semibold  text-base md:text-2xl">Withdraw</h3>
+                        <p class="text-3xl">$ <span id="withdraw">00</span></p>
+                    </div>
+                    <div class="bg-red-400 rounded p-6">
+                        <h3 class=" font-semibold  text-base md:text-2xl">Balance</h3>
+                        <p class="text-3xl">$ <span id="balance">00</span></p>
+                    </div>
+                </section>
+                <section class="mt-12 grid grid-cols-2 gap-5">
+                    <div class="bg-sky-400 rounded p-6 space-y-3">
+                        <h3 class="text-2xl font-semibold">Deposit</h3>
+                        <input class="w-full outline-none px-4 py-2 rounded text-center" type="number" id="user-deposit"
+                            placeholder="Deposit amount">
+                        <button class="bg-green-500 hover:bg-green-700 px-4 py-2 rounded mx-auto font-semibold w-3/4"
+                            id="btn-deposit">Deposit</button>
+                    </div>
+                    <div class="bg-fuchsia-400 rounded p-6 space-y-3">
+                        <h3 class="text-2xl font-semibold">Withdraw</h3>
+                        <input class="w-full outline-none px-4 py-2 rounded text-center" type="number" id="user-withdraw"
+                            placeholder="Withdraw amount">
+                        <button class="w-3/4 bg-red-500 hover:bg-red-700 px-4 py-2 rounded mx-auto font-semibold"
+                            id="btn-withdraw">withdraw</button>
+                    </div>
+                </section>
+            </section>
+        
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/bank.js"></script>
+</body> 
+</html>
